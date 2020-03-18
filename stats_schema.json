@@ -1,0 +1,23 @@
+{
+  "stats": {
+    "houses": [
+      {
+        "id": 1,
+        "address": "Mira 14",
+        "bricks_now": 1000,
+        "bricks_ahead": 30000,
+        "bricks_total": 31000,
+        "active_jobs": [
+          {
+            "bricks_amount": 500,
+            "exec_time": "2020-03-20"
+          },
+          {
+            "bricks_amount": 500,
+            "exec_time": "2020-03-25"
+          }
+        ]
+      }
+    ]
+  }
+}
