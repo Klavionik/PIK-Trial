@@ -8,6 +8,7 @@
 
 `$ git clone https://github.com/Klavionik/construction-trial-case.git`  
 `$ cd construction_trial_case`  
+`$ pip install -r requirements.txt`  
 `$ ./manage.py migrate`  
 `$ ./manage.py loaddata construction.json`  
 `$ ./manage.py runserver`
