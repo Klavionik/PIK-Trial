@@ -8,18 +8,18 @@ class Building(models.Model):
         unique=True,
     )
 
-    built = models.DateTimeField(
-        verbose_name='Дата постройки',
+    built = models.IntegerField(
+        verbose_name='Год постройки',
         blank=False,
     )
 
     class Meta:
         db_table = 'construction_buildings'
-        verbose_name = 'Здание'
-        verbose_name_plural = 'Здания'
+        verbose_name = 'Строение'
+        verbose_name_plural = 'Строение'
 
     def __str__(self):
-        return f'№{self.id} {self.address} {self.built}'
+        return f'Дом №{self.id} Адрес {self.address} {self.built}'
 
 
 class Job(models.Model):
@@ -33,10 +33,9 @@ class Job(models.Model):
     )
     building = models.ForeignKey(
         Building,
-        verbose_name='Здание',
+        verbose_name='Строение',
         on_delete=models.CASCADE,
         related_name='jobs',
-        null=False,
     )
 
     class Meta:
