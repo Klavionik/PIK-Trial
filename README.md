@@ -23,5 +23,5 @@
 * Добавление кирпичей в дом  
 `/api/construction/building/{building_id}/add_bricks`
 
-* Статистика по всем домам  
+* Статистика по всем домам (`/` редиректит сюда же)  
 `/api/construction/stats`
